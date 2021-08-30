@@ -1,0 +1,12 @@
+<div class="Home">
+  <h1>Welcome to Home</h1>
+  <div>
+    <button (click)="loginTracker()">Login</button>
+    <button (click)="handleClickCreateAccount()">Create Account</button>
+  </div>
+  <div *ngIf="isCreatingAccount">
+    <span>What Are You?</span>
+    <button (click)="userTypeTracker('person')">A Person</button>
+    <button (click)="userTypeTracker('cat')">A Cat</button>
+  </div>
+</div>
